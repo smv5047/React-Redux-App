@@ -22,12 +22,14 @@ function App(props) {
       <h1>Gotta Catch 'Em All!</h1>
 
       <Button/>
+      <div className="Container">
       {/* <Cards pokemon={props.pokemon}/> */}
       {props.isLoading ? (
         <p>Is Loading</p>
         ) : (props.pokemon.map(pokemon => (
-                
-                <h2>{pokemon.name}</h2>
+                <div className="Card">
+                  <h2>{pokemon.name}</h2>
+                </div>
             ))
         )
       }
@@ -38,7 +40,7 @@ function App(props) {
           <img src={props.pokemon.sprites.front_default} alt={props.pokemon.species.name}/>
         )
       } */}
-      
+      </div>
 
     </div>
   );

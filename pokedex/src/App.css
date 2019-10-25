@@ -20,3 +20,20 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+.Container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Card {
+  width: 200px;
+  border: solid 1px black;
+  color: grey;
+  margin: 5px 10px;
+}
+
